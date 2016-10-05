@@ -1,0 +1,23 @@
+main
+	__CC2DW
+	system_setup
+		UART1_Init
+		UART1_Write_Text
+			UART1_Write
+		I2C1_Init
+		color_3_init
+			color_3_hal_init
+			color_3_hal_write
+				memcpy
+				____DoIFC
+	UART1_Write_Text
+		UART1_Write
+	color_3_hal_read
+		____DoIFC
+	IntToHex
+	color_3_get_rgb_data
+		color_3_hal_read
+			____DoIFC
+	IntToStr
+		WordToStr
+			Div_16X16_U

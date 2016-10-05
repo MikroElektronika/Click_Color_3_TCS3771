@@ -1,0 +1,16 @@
+0	1	mikroCARM.exe -MSF -DBG -pSTM32F107VC -BIN -LHF -DL -SSA -O11111114 -fo72 -N"C:\Users\Corey\Documents\Projects\Color_3\ARM\Test\Color_3_click_ARM.mcpar" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\" -SP"C:\Users\Corey\Documents\Projects\Color_3\ARM\Test\" -SP"C:\Users\Corey\Documents\Projects\Color_3\ARM\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M3\" "Color_3_click_ARM.c" "__Lib_Math.emcl" "__Lib_MathDouble.emcl" "__Lib_Delays.emcl" "__Lib_System_105_107.emcl" "__Lib_GPIO_32F10x_Defs.emcl" "__Lib_GPIO_32F10x.emcl" "__Lib_CString.emcl" "__Lib_Conversions.emcl" "__Lib_I2C_12.emcl" "__Lib_UART_123_45.emcl"	 
+diagnostics: 0	122	Compilation Started	stdint.h
+hint: 67	1163	Variable 'color' has been declared, but not used	Color_3_click_ARM.c
+diagnostics: 237	123	Compiled Successfully	Color_3_click_ARM.c
+hint: 62	1164	Variable 'id_reg' has been eliminated by optimizer	Color_3_click_ARM.c
+hint: 64	1164	Variable 'l_byte' has been eliminated by optimizer	Color_3_click_ARM.c
+hint: 65	1164	Variable 'h_byte' has been eliminated by optimizer	Color_3_click_ARM.c
+hint: 179	1164	Variable 'temp_ptr' has been eliminated by optimizer	Color_3_click_ARM.c
+diagnostics: 0	127	All files Compiled in 47 ms	 
+hint: 0	1144	Used RX: 16 (100%)   Free RX: 0 (0%)	Used RX: 16 (100%)   Free RX: 0 (0%)
+hint: 0	1144	Static RAM (bytes): 180   Dynamic RAM (bytes): 65353	Static RAM (bytes): 180   Dynamic RAM (bytes): 65353
+hint: 0	1144	Used ROM (bytes): 6883 (3%)  Free ROM (bytes): 255261 (97%)	Used ROM (bytes): 6883 (3%)  Free ROM (bytes): 255261 (97%)
+diagnostics: 0	125	Project Linked Successfully	Color_3_click_ARM.mcpar
+diagnostics: 0	128	Linked in 312 ms	 
+diagnostics: 0	129	Project 'Color_3_click_ARM.mcpar' completed: 468 ms	 
+diagnostics: 0	103	Finished successfully: 04 Oct 2016, 11:56:32	Color_3_click_ARM.mcpar

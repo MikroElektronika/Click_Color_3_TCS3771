@@ -1,0 +1,176 @@
+\hypertarget{color__3_8c}{}\section{src/color\+\_\+3.c File Reference}
+\label{color__3_8c}\index{src/color\+\_\+3.\+c@{src/color\+\_\+3.\+c}}
+
+
+Color 3 click.  
+
+
+{\ttfamily \#include \char`\"{}color\+\_\+3.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}color\+\_\+3\+\_\+hal.\+h\char`\"{}}\\*
+Include dependency graph for color\+\_\+3.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{color__3_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{color__3_8c_ab991bcb3e9d7f3503ef001b546205e5b}{}\#define {\bfseries T\+C\+S3771\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+P\+E\+C\+I\+A\+L}~(3 $<$$<$ 5)\label{color__3_8c_ab991bcb3e9d7f3503ef001b546205e5b}
+
+\item 
+\hypertarget{color__3_8c_aac838b683c94c07d0b84c4bdb90c00bd}{}\#define {\bfseries T\+C\+S3771\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+U\+T\+O\+I\+N\+C}~(0b01 $<$$<$ 5)\label{color__3_8c_aac838b683c94c07d0b84c4bdb90c00bd}
+
+\item 
+\hypertarget{color__3_8c_ad1455e9122a371f341eeb9c60bd80968}{}\#define {\bfseries T\+C\+S3771\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+S\+E\+L\+E\+C\+T}~(1 $<$$<$ 7)\label{color__3_8c_ad1455e9122a371f341eeb9c60bd80968}
+
+\item 
+\hypertarget{color__3_8c_ace3d5257e08d409a706ed4222e8c355e}{}\#define {\bfseries T\+C\+S3771\+\_\+\+E\+N\+A\+B\+L\+E}~0x00\label{color__3_8c_ace3d5257e08d409a706ed4222e8c355e}
+
+\item 
+\hypertarget{color__3_8c_a58829c5fc039c072070018b4b2b2c1a5}{}\#define {\bfseries T\+C\+S3771\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+O\+N}~(1 $<$$<$ 0)\label{color__3_8c_a58829c5fc039c072070018b4b2b2c1a5}
+
+\item 
+\hypertarget{color__3_8c_a16e2275711da55fcf5c5274c79427080}{}\#define {\bfseries T\+C\+S3771\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+E\+N}~(1 $<$$<$ 1)\label{color__3_8c_a16e2275711da55fcf5c5274c79427080}
+
+\item 
+\hypertarget{color__3_8c_a0e4a24993bb9aa7bd1c8b6f6c60c7a9c}{}\#define {\bfseries T\+C\+S3771\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+E\+N}~(1 $<$$<$ 2)\label{color__3_8c_a0e4a24993bb9aa7bd1c8b6f6c60c7a9c}
+
+\item 
+\hypertarget{color__3_8c_a3ba0727605ad60b2cdd22f85ce42d867}{}\#define {\bfseries T\+C\+S3771\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+W\+E\+N}~(1 $<$$<$ 3)\label{color__3_8c_a3ba0727605ad60b2cdd22f85ce42d867}
+
+\item 
+\hypertarget{color__3_8c_ac7439a0712ad950c132a0d158819d010}{}\#define {\bfseries T\+C\+S3771\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+I\+E\+N}~(1 $<$$<$ 4)\label{color__3_8c_ac7439a0712ad950c132a0d158819d010}
+
+\item 
+\hypertarget{color__3_8c_a4c4676190175cafae89b3bceaa2889df}{}\#define {\bfseries T\+C\+S3771\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+I\+E\+N}~(1 $<$$<$ 5)\label{color__3_8c_a4c4676190175cafae89b3bceaa2889df}
+
+\item 
+\hypertarget{color__3_8c_a102a4bd37f8702f783562f3ee7d3f37f}{}\#define {\bfseries T\+C\+S3771\+\_\+\+A\+T\+I\+M\+E}~0x01\label{color__3_8c_a102a4bd37f8702f783562f3ee7d3f37f}
+
+\item 
+\hypertarget{color__3_8c_a233500a3f78df902307a0fd1f4633cf5}{}\#define {\bfseries T\+C\+S3771\+\_\+\+P\+T\+I\+M\+E}~0x02\label{color__3_8c_a233500a3f78df902307a0fd1f4633cf5}
+
+\item 
+\hypertarget{color__3_8c_aaef8ecbe3e65e65d657047840927f5cd}{}\#define {\bfseries T\+C\+S3771\+\_\+\+W\+T\+I\+M\+E}~0x03\label{color__3_8c_aaef8ecbe3e65e65d657047840927f5cd}
+
+\item 
+\hypertarget{color__3_8c_a9cf2ef509a538f6989d8d12a243ac641}{}\#define {\bfseries T\+C\+S3771\+\_\+\+A\+I\+L\+T}~0x04\label{color__3_8c_a9cf2ef509a538f6989d8d12a243ac641}
+
+\item 
+\hypertarget{color__3_8c_a0dd9b9b76e3a4abb1649e142d897bdf4}{}\#define {\bfseries T\+C\+S3771\+\_\+\+A\+I\+H\+T}~0x06\label{color__3_8c_a0dd9b9b76e3a4abb1649e142d897bdf4}
+
+\item 
+\hypertarget{color__3_8c_a51a8e34c2fdd1265d1951252a0cb8293}{}\#define {\bfseries T\+C\+S3771\+\_\+\+P\+I\+L\+T}~0x08\label{color__3_8c_a51a8e34c2fdd1265d1951252a0cb8293}
+
+\item 
+\hypertarget{color__3_8c_a79b1cda6326a92a76d1088a0cb3100ea}{}\#define {\bfseries T\+C\+S3771\+\_\+\+P\+I\+H\+T}~0x0a\label{color__3_8c_a79b1cda6326a92a76d1088a0cb3100ea}
+
+\item 
+\hypertarget{color__3_8c_ad1946a77ac5243562462cde439cec8be}{}\#define {\bfseries T\+C\+S3771\+\_\+\+P\+E\+R\+S}~0x0c\label{color__3_8c_ad1946a77ac5243562462cde439cec8be}
+
+\item 
+\hypertarget{color__3_8c_a0ab498632a829eaa170e5fbeb188d6ef}{}\#define {\bfseries T\+C\+S3771\+\_\+\+P\+E\+R\+S\+\_\+\+P\+P\+E\+R\+S}(x)~((x) $<$$<$ 4)\label{color__3_8c_a0ab498632a829eaa170e5fbeb188d6ef}
+
+\item 
+\hypertarget{color__3_8c_a7ae44a8dcbc7c40e9171839bba292549}{}\#define {\bfseries T\+C\+S3771\+\_\+\+P\+E\+R\+S\+\_\+\+A\+P\+E\+R\+S}(x)~((x) \& 0xf)\label{color__3_8c_a7ae44a8dcbc7c40e9171839bba292549}
+
+\item 
+\hypertarget{color__3_8c_a53180239013e855a2013f4891c4bada1}{}\#define {\bfseries T\+C\+S3771\+\_\+\+C\+O\+N\+F}~0x0d\label{color__3_8c_a53180239013e855a2013f4891c4bada1}
+
+\item 
+\hypertarget{color__3_8c_ae9cf122497fdd904f7e473701e1f9364}{}\#define {\bfseries T\+C\+S3771\+\_\+\+C\+O\+N\+F\+\_\+\+W\+L\+O\+N\+G}~(1 $<$$<$ 1)\label{color__3_8c_ae9cf122497fdd904f7e473701e1f9364}
+
+\item 
+\hypertarget{color__3_8c_adf08fa94f2ae46b0efee8f4a25fb4840}{}\#define {\bfseries T\+C\+S3771\+\_\+\+P\+P\+U\+L\+S\+E}~0x0e\label{color__3_8c_adf08fa94f2ae46b0efee8f4a25fb4840}
+
+\item 
+\hypertarget{color__3_8c_a7581b03d138efb10438ada58da112836}{}\#define {\bfseries T\+C\+S3771\+\_\+\+C\+O\+N\+T\+R\+O\+L}~0x0f\label{color__3_8c_a7581b03d138efb10438ada58da112836}
+
+\item 
+\hypertarget{color__3_8c_a55d4b7c7a8f3ed5979b6f67b401d4ae8}{}\#define {\bfseries T\+C\+S3771\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+D\+I\+O\+D\+E\+\_\+\+I\+R}~(0b10 $<$$<$ 4)\label{color__3_8c_a55d4b7c7a8f3ed5979b6f67b401d4ae8}
+
+\item 
+\hypertarget{color__3_8c_a04d9f9aadce6d6481162b9cb566ce72a}{}\#define {\bfseries T\+C\+S3771\+\_\+\+I\+D}~0x12\label{color__3_8c_a04d9f9aadce6d6481162b9cb566ce72a}
+
+\item 
+\hypertarget{color__3_8c_a78dbd9fe90c44cd903da291e9246fe1a}{}\#define {\bfseries T\+C\+S3771\+\_\+\+S\+T\+A\+T\+U\+S}~0x13\label{color__3_8c_a78dbd9fe90c44cd903da291e9246fe1a}
+
+\item 
+\hypertarget{color__3_8c_a01787401b2da60ea96a88da301ff9adc}{}\#define {\bfseries T\+C\+S3771\+\_\+\+P\+D\+A\+T\+A}~0x1c\label{color__3_8c_a01787401b2da60ea96a88da301ff9adc}
+
+\item 
+\hypertarget{color__3_8c_a5f0662fd0e765faccbb6d02c15a76538}{}\#define {\bfseries T\+C\+S3771\+\_\+\+C\+D\+A\+T\+A}~0x14\label{color__3_8c_a5f0662fd0e765faccbb6d02c15a76538}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{color__3_8c_a9f116bb54a359aae1dcbc3397be95005}{color\+\_\+3\+\_\+init} (uint8\+\_\+t address)
+\item 
+void \hyperlink{color__3_8c_a160121e4bf056da0e86f7ba476547335}{color\+\_\+3\+\_\+get\+\_\+rgb\+\_\+data} (\hyperlink{structcolor__t}{color\+\_\+t} $\ast$color)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Color 3 click. 
+
+\begin{DoxyAuthor}{Author}
+Mikro\+Elektronika Team 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+04/10/16
+\end{DoxyDate}
+\begin{DoxyParagraph}{}
+Functions set for Color 3.
+\end{DoxyParagraph}
+\begin{DoxyVersion}{Version}
+
+\begin{DoxyItemize}
+\item 1.\+0.\+0 Initial version
+\item 1.\+0.\+1 Doxy added ( Color 3 )
+\end{DoxyItemize}
+\end{DoxyVersion}
+\begin{DoxyParagraph}{}
+\href{../datasheet/color_3.pdf}{\tt Datasheet}
+\end{DoxyParagraph}
+\begin{DoxyCopyright}{Copyright}
+\subparagraph*{\href{../../COPYING}{\tt G\+N\+U G\+P\+L 2}}
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\hypertarget{color__3_8c_a160121e4bf056da0e86f7ba476547335}{}\index{color\+\_\+3.\+c@{color\+\_\+3.\+c}!color\+\_\+3\+\_\+get\+\_\+rgb\+\_\+data@{color\+\_\+3\+\_\+get\+\_\+rgb\+\_\+data}}
+\index{color\+\_\+3\+\_\+get\+\_\+rgb\+\_\+data@{color\+\_\+3\+\_\+get\+\_\+rgb\+\_\+data}!color\+\_\+3.\+c@{color\+\_\+3.\+c}}
+\subsubsection[{color\+\_\+3\+\_\+get\+\_\+rgb\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}void color\+\_\+3\+\_\+get\+\_\+rgb\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{{\bf color\+\_\+t} $\ast$}]{color}
+\end{DoxyParamCaption}
+)}\label{color__3_8c_a160121e4bf056da0e86f7ba476547335}
+\paragraph*{Color 3 Get R\+G\+B Data }
+
+\begin{DoxyParagraph}{}
+Gets clear, red, green, and blue data from click.
+\end{DoxyParagraph}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em color} & -\/ \hyperlink{structcolor__t}{color\+\_\+t} struct for returning clear and rgb data. \\
+\hline
+\end{DoxyParams}
+\hypertarget{color__3_8c_a9f116bb54a359aae1dcbc3397be95005}{}\index{color\+\_\+3.\+c@{color\+\_\+3.\+c}!color\+\_\+3\+\_\+init@{color\+\_\+3\+\_\+init}}
+\index{color\+\_\+3\+\_\+init@{color\+\_\+3\+\_\+init}!color\+\_\+3.\+c@{color\+\_\+3.\+c}}
+\subsubsection[{color\+\_\+3\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void color\+\_\+3\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{address}
+\end{DoxyParamCaption}
+)}\label{color__3_8c_a9f116bb54a359aae1dcbc3397be95005}
+\paragraph*{Color 3 Initialization }
+
+\begin{DoxyParagraph}{}
+Initializes Color 3
+\end{DoxyParagraph}
+\begin{DoxyNote}{Note}
+This function must be called first. 
+\end{DoxyNote}

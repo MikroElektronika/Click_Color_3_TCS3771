@@ -1,0 +1,100 @@
+\hypertarget{color__3__hal_8c}{}\section{src/color\+\_\+3\+\_\+hal.c File Reference}
+\label{color__3__hal_8c}\index{src/color\+\_\+3\+\_\+hal.\+c@{src/color\+\_\+3\+\_\+hal.\+c}}
+{\ttfamily \#include \char`\"{}color\+\_\+3\+\_\+hal.\+h\char`\"{}}\\*
+Include dependency graph for color\+\_\+3\+\_\+hal.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{color__3__hal_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{color__3__hal_8c_a2f493ed233e66342493f155ebda5c183}{}\#define {\bfseries R\+E\+A\+D\+\_\+\+B\+I\+T}~1\label{color__3__hal_8c_a2f493ed233e66342493f155ebda5c183}
+
+\item 
+\hypertarget{color__3__hal_8c_a7fc57d5be9f588839a00c75ef2946e17}{}\#define {\bfseries W\+R\+I\+T\+E\+\_\+\+B\+I\+T}~0\label{color__3__hal_8c_a7fc57d5be9f588839a00c75ef2946e17}
+
+\item 
+\hypertarget{color__3__hal_8c_a27fd8f8401ebd63d438cc642eb130749}{}\#define {\bfseries \+\_\+\+\_\+\+A\+T\+M\+E\+G\+A\+\_\+\+\_\+}\label{color__3__hal_8c_a27fd8f8401ebd63d438cc642eb130749}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{color__3__hal_8c_a1eb89db63de5f77f2a34c42e5a353d91}{color\+\_\+3\+\_\+hal\+\_\+init} (uint8\+\_\+t address\+\_\+id, uint8\+\_\+t command\+\_\+size)
+\item 
+void \hyperlink{color__3__hal_8c_ae1d223178a020ecf9b22a21760b12bc9}{color\+\_\+3\+\_\+hal\+\_\+write} (uint8\+\_\+t $\ast$buffer, uint8\+\_\+t reg, uint16\+\_\+t count, cmd\+\_\+type\+\_\+t type)
+\item 
+void \hyperlink{color__3__hal_8c_a462e1e44613feefb21f65a6cb23b784a}{color\+\_\+3\+\_\+hal\+\_\+read} (uint8\+\_\+t $\ast$buffer, uint8\+\_\+t reg, uint8\+\_\+t count)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{H\+A\+L layer }
+
+\subsection{Function Documentation}
+\hypertarget{color__3__hal_8c_a1eb89db63de5f77f2a34c42e5a353d91}{}\index{color\+\_\+3\+\_\+hal.\+c@{color\+\_\+3\+\_\+hal.\+c}!color\+\_\+3\+\_\+hal\+\_\+init@{color\+\_\+3\+\_\+hal\+\_\+init}}
+\index{color\+\_\+3\+\_\+hal\+\_\+init@{color\+\_\+3\+\_\+hal\+\_\+init}!color\+\_\+3\+\_\+hal.\+c@{color\+\_\+3\+\_\+hal.\+c}}
+\subsubsection[{color\+\_\+3\+\_\+hal\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void color\+\_\+3\+\_\+hal\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{address\+\_\+id, }
+\item[{uint8\+\_\+t}]{command\+\_\+size}
+\end{DoxyParamCaption}
+)}\label{color__3__hal_8c_a1eb89db63de5f77f2a34c42e5a353d91}
+\paragraph*{H\+A\+L Initialization}
+
+\begin{DoxyParagraph}{}
+Initialization of H\+A\+L layer used to initialize I2\+C bus and pins needed for proper usage of click board.
+\end{DoxyParagraph}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em address\+\_\+id} & -\/ hardware address \\
+\hline
+\end{DoxyParams}
+\hypertarget{color__3__hal_8c_a462e1e44613feefb21f65a6cb23b784a}{}\index{color\+\_\+3\+\_\+hal.\+c@{color\+\_\+3\+\_\+hal.\+c}!color\+\_\+3\+\_\+hal\+\_\+read@{color\+\_\+3\+\_\+hal\+\_\+read}}
+\index{color\+\_\+3\+\_\+hal\+\_\+read@{color\+\_\+3\+\_\+hal\+\_\+read}!color\+\_\+3\+\_\+hal.\+c@{color\+\_\+3\+\_\+hal.\+c}}
+\subsubsection[{color\+\_\+3\+\_\+hal\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}void color\+\_\+3\+\_\+hal\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{buffer, }
+\item[{uint8\+\_\+t}]{reg, }
+\item[{uint8\+\_\+t}]{count}
+\end{DoxyParamCaption}
+)}\label{color__3__hal_8c_a462e1e44613feefb21f65a6cb23b784a}
+\paragraph*{H\+A\+L Read}
+
+\begin{DoxyParagraph}{}
+Generic read function adapted for color\+\_\+3 click.
+\end{DoxyParagraph}
+\begin{DoxyNote}{Note}
+Buffer caries command which will be rewritten after reading.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\hypertarget{color__3__hal_8c_ae1d223178a020ecf9b22a21760b12bc9}{}\index{color\+\_\+3\+\_\+hal.\+c@{color\+\_\+3\+\_\+hal.\+c}!color\+\_\+3\+\_\+hal\+\_\+write@{color\+\_\+3\+\_\+hal\+\_\+write}}
+\index{color\+\_\+3\+\_\+hal\+\_\+write@{color\+\_\+3\+\_\+hal\+\_\+write}!color\+\_\+3\+\_\+hal.\+c@{color\+\_\+3\+\_\+hal.\+c}}
+\subsubsection[{color\+\_\+3\+\_\+hal\+\_\+write}]{\setlength{\rightskip}{0pt plus 5cm}void color\+\_\+3\+\_\+hal\+\_\+write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{buffer, }
+\item[{uint8\+\_\+t}]{reg, }
+\item[{uint16\+\_\+t}]{count, }
+\item[{cmd\+\_\+type\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)}\label{color__3__hal_8c_ae1d223178a020ecf9b22a21760b12bc9}
+\paragraph*{H\+A\+L Write}
+
+\begin{DoxyParagraph}{}
+Generic write function adapted for color\+\_\+3 click.
+\end{DoxyParagraph}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & -\/ data buffer \\
+\hline
+\mbox{\tt in}  & {\em count} & -\/ data size in bytes \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,61 @@
+[OPTIONS]
+Compiled file=color_3_help.chm
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=Color 3 click
+
+[WINDOWS]
+main="Color 3 click","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+color__3_8h_source.html
+color__3__hal_8h_source.html
+color__3_8h.html
+color__3__hal_8h.html
+color__3_8c.html
+color__3__hal_8c.html
+structcolor__t.html
+graph_legend.html
+dir_d44c64559bbebec7f509842c48db8b23.html
+dir_68267d1309a1af8e8297ef4c3efbcdba.html
+dir_000001_000000.html
+index.html
+annotated.html
+classes.html
+files.html
+globals.html
+globals_func.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+logo_small.png
+doc.png
+folderopen.png
+folderclosed.png
+arrowdown.png
+arrowright.png
+splitbar.png
+color__3_8h__incl.png
+color__3_8h__dep__incl.png
+color__3__hal_8h__incl.png
+color__3__hal_8h__dep__incl.png
+color__3_8c__incl.png
+color__3__hal_8c__incl.png
+graph_legend.png
+dir_d44c64559bbebec7f509842c48db8b23_dep.png
+dir_68267d1309a1af8e8297ef4c3efbcdba_dep.png
