@@ -1,6 +1,6 @@
 ![MikroE](http://www.mikroe.com/img/designs/beta/logo_small.png)
 
-![Color 3 Click](http://cdn.mikroe.com/img/click/color_3/img.png)
+![Color 3 Click](http://cdn.mikroe.com/img/click/color-3/color-3-click.png)
 
 ---
 [Product Page](http://www.mikroe.com/click/color-3/)
