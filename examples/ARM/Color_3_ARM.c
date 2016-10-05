@@ -1,6 +1,5 @@
 #include <stdint.h>
 #include "color_3.h"
-#include "color_3_hal.h"
 
 sbit INT at GPIOD_IDR.B10;
 
@@ -18,14 +17,6 @@ void main()
 
     //Setup
     system_setup();
-
-    //Get Device ID
-    UART1_Write_Text( "Device ID:  " );
-    color_3_hal_read( id_buffer, id_reg, 1 );
-    IntToHex( id_buffer[0], uart_text );
-    UART1_Write_Text( uart_text );
-    UART1_Write_Text( "\r\n\r\n\r\n" );
-    Delay_ms(1000);
 
     while(1)
     {
